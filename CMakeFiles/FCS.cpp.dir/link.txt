@@ -1,0 +1,2 @@
+/usr/bin/ar qc libFCS.cpp.a CMakeFiles/FCS.cpp.dir/Error/_Error/Error.cpp.o CMakeFiles/FCS.cpp.dir/System/System_String.cpp.o
+/usr/bin/ranlib libFCS.cpp.a

@@ -1,0 +1,3 @@
+/home/fzzkill/Projects/refcs/FCS/CMakeFiles/FCS.cpp.dir
+/home/fzzkill/Projects/refcs/FCS/CMakeFiles/edit_cache.dir
+/home/fzzkill/Projects/refcs/FCS/CMakeFiles/rebuild_cache.dir
