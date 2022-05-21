@@ -1,11 +1,6 @@
 project(reFCS)
 
-add_library(
-    FCS.cpp
-    FCS.h
-    ./Error/O.hpp
-    ./Error/_Error/Error.cpp
-    ./Error/_Error/Error.hpp
-    ./System/System_String.cpp
-    ./System/System_String.hpp
-    )
+set(CMAKE_CXX_STANDARD 17)
+message("C++ Standard: ${CMAKE-CXX_STANDRAD}")
+file(GLOB SRC_FILES "./FCS.cpp", "./Error/O.hpp", "./System/*.cpp")
+add_executable(${CMAKE_PROJECT_NAME} ${SRC_FILES})

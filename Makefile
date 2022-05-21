@@ -117,65 +117,47 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named FCS.cpp
+# Target rules for targets named reFCS
 
 # Build rule for target.
-FCS.cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FCS.cpp
-.PHONY : FCS.cpp
+reFCS: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 reFCS
+.PHONY : reFCS
 
 # fast build rule for target.
-FCS.cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/build
-.PHONY : FCS.cpp/fast
-
-Error/_Error/Error.o: Error/_Error/Error.cpp.o
-.PHONY : Error/_Error/Error.o
+reFCS/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/build
+.PHONY : reFCS/fast
 
 # target to build an object file
-Error/_Error/Error.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/Error/_Error/Error.cpp.o
-.PHONY : Error/_Error/Error.cpp.o
-
-Error/_Error/Error.i: Error/_Error/Error.cpp.i
-.PHONY : Error/_Error/Error.i
+FCS.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/FCS.o
+.PHONY : FCS.o
 
 # target to preprocess a source file
-Error/_Error/Error.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/Error/_Error/Error.cpp.i
-.PHONY : Error/_Error/Error.cpp.i
-
-Error/_Error/Error.s: Error/_Error/Error.cpp.s
-.PHONY : Error/_Error/Error.s
+FCS.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/FCS.i
+.PHONY : FCS.i
 
 # target to generate assembly for a file
-Error/_Error/Error.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/Error/_Error/Error.cpp.s
-.PHONY : Error/_Error/Error.cpp.s
+FCS.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/FCS.s
+.PHONY : FCS.s
 
-System/System_String.o: System/System_String.cpp.o
+# target to build an object file
+System/System_String.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/System/System_String.o
 .PHONY : System/System_String.o
 
-# target to build an object file
-System/System_String.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/System/System_String.cpp.o
-.PHONY : System/System_String.cpp.o
-
-System/System_String.i: System/System_String.cpp.i
+# target to preprocess a source file
+System/System_String.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/System/System_String.i
 .PHONY : System/System_String.i
 
-# target to preprocess a source file
-System/System_String.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/System/System_String.cpp.i
-.PHONY : System/System_String.cpp.i
-
-System/System_String.s: System/System_String.cpp.s
-.PHONY : System/System_String.s
-
 # target to generate assembly for a file
-System/System_String.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/System/System_String.cpp.s
-.PHONY : System/System_String.cpp.s
+System/System_String.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/System/System_String.s
+.PHONY : System/System_String.s
 
 # Help Target
 help:
@@ -185,10 +167,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... FCS.cpp"
-	@echo "... Error/_Error/Error.o"
-	@echo "... Error/_Error/Error.i"
-	@echo "... Error/_Error/Error.s"
+	@echo "... reFCS"
+	@echo "... FCS.o"
+	@echo "... FCS.i"
+	@echo "... FCS.s"
 	@echo "... System/System_String.o"
 	@echo "... System/System_String.i"
 	@echo "... System/System_String.s"

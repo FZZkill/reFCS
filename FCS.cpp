@@ -1,5 +1,9 @@
 #include "./FCS.h"
+#include "Error/_Error/Error.hpp"
 
+#include "Error/O.hpp"
+using namespace Error;
+using namespace Output;
 int main(int argc, char **argv)
 {
     string get;
@@ -7,11 +11,14 @@ int main(int argc, char **argv)
     while (true)
     {
         getline(cin,get);
-        if (get.compare("exit")) return_ = Output_Exit();
+        if (get.compare("exit")) goto stop;
 
 
-        if (return_ == 0) goto stop;
     }
 
-stop:return 0;
+    
+stop:
+    Output_Exit();
+    return 0;
+
 }

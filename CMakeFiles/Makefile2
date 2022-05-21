@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/fzzkill/Projects/refcs/FCS
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/FCS.cpp.dir/all
+all: CMakeFiles/reFCS.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/FCS.cpp.dir/clean
+clean: CMakeFiles/reFCS.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/FCS.cpp.dir
+# Target rules for target CMakeFiles/reFCS.dir
 
 # All Build rule for target.
-CMakeFiles/FCS.cpp.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fzzkill/Projects/refcs/FCS/CMakeFiles --progress-num=1,2,3 "Built target FCS.cpp"
-.PHONY : CMakeFiles/FCS.cpp.dir/all
+CMakeFiles/reFCS.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/fzzkill/Projects/refcs/FCS/CMakeFiles --progress-num=1,2,3 "Built target reFCS"
+.PHONY : CMakeFiles/reFCS.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/FCS.cpp.dir/rule: cmake_check_build_system
+CMakeFiles/reFCS.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fzzkill/Projects/refcs/FCS/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FCS.cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/reFCS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fzzkill/Projects/refcs/FCS/CMakeFiles 0
-.PHONY : CMakeFiles/FCS.cpp.dir/rule
+.PHONY : CMakeFiles/reFCS.dir/rule
 
 # Convenience name for target.
-FCS.cpp: CMakeFiles/FCS.cpp.dir/rule
-.PHONY : FCS.cpp
+reFCS: CMakeFiles/reFCS.dir/rule
+.PHONY : reFCS
 
 # clean rule for target.
-CMakeFiles/FCS.cpp.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FCS.cpp.dir/build.make CMakeFiles/FCS.cpp.dir/clean
-.PHONY : CMakeFiles/FCS.cpp.dir/clean
+CMakeFiles/reFCS.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/reFCS.dir/build.make CMakeFiles/reFCS.dir/clean
+.PHONY : CMakeFiles/reFCS.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
