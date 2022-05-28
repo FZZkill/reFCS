@@ -13,3 +13,8 @@ const char* System_O::Output()
 {
     return "|Console_Output>";
 }
+
+const char* eva::Output()
+{
+    return "|CONSOLE>";
+}

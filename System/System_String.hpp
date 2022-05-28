@@ -10,3 +10,7 @@ namespace System_O
 {
     const char* Output();
 }
+namespace eva
+{
+    const char* Output();
+}

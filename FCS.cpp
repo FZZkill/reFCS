@@ -1,24 +1,26 @@
 #include "./FCS.h"
-#include "Error/_Error/Error.hpp"
 
 #include "Error/O.hpp"
-using namespace Error;
-using namespace Output;
+#include "System//System_String.hpp"
+
 int main(int argc, char **argv)
 {
     string get;
     int return_;
+    const time_t now = time(0);
     while (true)
     {
+        char* dt =  ctime(&now);
+        cout << eva::Output() << dt << ">";
         getline(cin,get);
-        if (get.compare("exit")) goto stop;
-
+        if (get.compare("exit") == 0) goto stop;
+        delete dt;
 
     }
 
-    
+
 stop:
-    Output_Exit();
+    cout << "Exit by code: 0" << endl;
     return 0;
 
 }

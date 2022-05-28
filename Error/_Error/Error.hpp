@@ -10,7 +10,4 @@ namespace Error
     int TooLang(); 
     int InputError(string Error_Code_1);
 }
-namespace Output
-{
-    int Output_Exit(); 
-}
+
